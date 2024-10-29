@@ -1,0 +1,68 @@
+{
+  "name": "@dodicandra/rn-utility",
+  "version": "1.0.0",
+  "description": "a small components & utility ",
+  "main": "./lib/commonjs/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "bob build"
+  },
+  "keywords": [
+    "component",
+    "utility"
+  ],
+  "author": "Dodi candra <cekiddot@gmail.com> (https://github.com/dodicandra)",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "react": "^18.3.1",
+    "react-native": "^0.76.0",
+    "react-native-builder-bob": "^0.30.3",
+    "react-native-reanimated": "2.9.1"
+  },
+  "source": "./src/index.ts",
+  "types": "./lib/typescript/src/index.d.ts",
+  "files": [
+    "src",
+    "lib",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__",
+    "!node_modules"
+  ],
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      [
+        "commonjs",
+        {
+          "esm": false
+        }
+      ],
+      [
+        "typescript",
+        {
+          "esm": false
+        }
+      ]
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-reanimated": ">=2.9.1"
+  },
+  "peerDependenciesMeta": {
+    "@types/react-native": {
+      "optional": true
+    },
+    "@types/react": {
+      "optional": true
+    }
+  }
+}
