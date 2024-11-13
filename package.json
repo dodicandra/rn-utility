@@ -1,6 +1,6 @@
 {
   "name": "@dodicandra/rn-utility",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a small components & utility ",
   "main": "./lib/commonjs/index.js",
   "scripts": {

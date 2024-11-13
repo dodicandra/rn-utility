@@ -36,7 +36,7 @@ type Style = Omit<
   | 'direction'
 >;
 
-interface IStyle extends Style {
+export interface IStyle extends Style {
   children?: React.ReactNode | JSX.Element | JSX.Element[];
   justify: FlexStyle['justifyContent'];
   align: FlexStyle['alignItems'];
